@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="js rgba boxshadow csstransitions desktop portrait" style="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta name="description" content="" />
+        <meta name="author" content="Sungchi" />
+        <title>현식 &amp; 정희</title>
+        <link rel="icon" href="https://hanbyeol-sungsub-wedding.github.io/images/favicon.jpg" />
+        <link rel="stylesheet" href="./resources/css/bootstrap.min.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="./resources/css/preloader.css" media="screen" />
+        <link rel="stylesheet" href="./resources/css/preloader-default.css" media="screen" />
+        <link rel="stylesheet" href="./resources/css/flexslider.css" type="text/css" />
+        <link rel="stylesheet" href="./resources/css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="./resources/css/jquery.countdown.css" type="text/css" />
+        <link rel="stylesheet" href="./resources/css/magnific-popup.css" type="text/css" />
+        <link rel="stylesheet" href="./resources/css/owl.carousel.css" type="text/css" />
+        <link rel="stylesheet" href="./resources/css/owl.theme.css" type="text/css" />
+        <link rel="stylesheet" href="./resources/css/fontello.css" type="text/css" media="screen" />
+        <link href="./resources/css/css" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/css(1)" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/css(2)" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/style.css" rel="stylesheet" media="screen" />
+    </head>
+    <body class="outside-bottom-bar-page pace-done" style="">
+        <div class="pace pace-inactive">
+            <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+                <div class="pace-progress-inner"></div>
+            </div>
+            <div class="pace-activity"></div>
+        </div>
+        <div id="preloader" style="display: none;">
+            <div class="alignment">
+                <div class="v-align center-middle">
+                    <div class="heart-animation"><i class="de-icon-heart"></i></div>
+                    <div class="heart-animation-reverse"><i class="de-icon-heart"></i></div>
+                </div>
+            </div>
+        </div>
+        <section id="content" style="">
+            <section id="our-story">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                            <div class="section-title animation fadeInUp animated" style="visibility: visible;">
+                                <h2>우리 <img src="./resources/images/heart-icon.png" alt="" /> 이야기</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="story"></div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div id="end-of-story" class="animation fadeInUp animated" style="visibility: visible;">
+                                <h2>저랑 결혼할래요?</h2>
+                                <div class="heart-divider"><span class="grey-line"></span> <i class="de-icon-heart pink-heart"></i> <i class="de-icon-heart grey-heart"></i> <span class="grey-line"></span></div>
+                                <button id="approval" onclick="slackWebhook(true);" style="margin: 10px;">수락</button>
+                                <button id="reject" onclick="slackWebhook(false);" style="margin: 10px;">거절</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="photo-divider-1" >
+                <div id="video" class="photo-item frame-border animation fadeIn animated" hidden>
+
+                    <video id="video1" controls autoplay width="100%" height="100%" loop poster="" controlsList="nodownload">
+                        <source src="./resources/images/video/video.mp4" type="video/mp4" />
+                        현재의 브라우저는 지원하지 않습니다.
+                    </video>
+                </div>
+                <div id="rejectMessage"></div>
+            </section>
+           <section id="gallery-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-8 text-center">
+                            <div class="section-title animation fadeInUp animated" style="visibility: visible;">
+                                <h2>우리 <img src="./resources/images/heart-icon.png" alt="" /> 갤러리</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="photo" class="row"></div>
+                </div>
+            </section>
+        </section>
+        <footer style="">
+            <div class="image-divider fixed-height" background-attachment: fixed; background-position: 50% 6177.38px;" data-stellar-background-ratio="0.5">
+                <div class="divider-overlay"></div>
+                <div class="alignment">
+                    <div class="v-align center-middle">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="animation fadeInUp animated" style="visibility: visible;">
+                                        <div id="thank-you">
+                                            <div id="thank">Thank</div>
+                                            <div id="you">You</div>
+                                        </div>
+                                    </div>
+                                    <div class="heart-divider animation delay1 fadeInUp animated" style="visibility: visible;">
+                                        <span class="white-line"></span> <i class="de-icon-heart pink-heart"></i> <i class="de-icon-heart white-heart"></i> <span class="white-line"></span>
+                                    </div>
+                                    <div id="footer-couple-name" class="animation delay1 fadeInUp animated" style="visibility: visible;">현식 &amp; 정희</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" async="" src="./resources/js/js"></script>
+        <script async="" src="./resources/js/analytics.js"></script>
+        <script src="./resources/js/jquery.min.js"></script>
+        <script src="./resources/js/pace.min.js"></script>
+        <script src="./resources/js/bootstrap.js"></script>
+        <script src="./resources/js/modernizr.js"></script>
+        <script src="./resources/js/device.js"></script>
+        <script src="./resources/js/tinynav.min.js"></script>
+        <script src="./resources/js/jquery.smooth-scroll.js"></script>
+        <script src="./resources/js/jquery.flexslider.js"></script>
+        <script src="./resources/js/jquery.sticky.js"></script>
+        <script src="./resources/js/jquery.waypoints.min.js"></script>
+        <script src="./resources/js/jquery.ui.widget.js"></script>
+        <script src="./resources/js/jquery.dcd.doubletaptogo.js"></script>
+        <script src="./resources/js/jquery.vide.js"></script>
+        <script src="./resources/js/jquery.stellar.js"></script>
+        <script src="./resources/js/masonry.pkgd.min.js"></script>
+        <script src="./resources/js/jquery.plugin.js"></script>
+        <script src="./resources/js/jquery.countdown.js"></script>
+        <script src="./resources/js/jquery.magnific-popup.js"></script>
+        <script src="./resources/js/owl.carousel.js"></script>
+        <script type="text/javascript" src="./resources/js/script.js"></script>
+        <script type="text/javascript" src="./resources/js/main-slider-fade.js"></script>
+        <script>
+            var rejectCnt = 0;
+
+            var story = [
+                {
+                    "picName": "001",
+                    "picTitle": "첫만남 그 설레임",
+                    "year": "2022",
+                    "month": "09",
+                    "title": "첫만남, 그 설레임",
+                    "note" : "당신과의 설레이는 만남을 시작하던 날이 아직도 생생합니다. 이 날의 만남은 저의 인생을 바꾸어 놓았습니다."
+                }
+                ,{
+                    "picName": "002",
+                    "picTitle": "어쩌다보니",
+                    "year": "2022",
+                    "month": "11",
+                    "title": "어쩌다보니",
+                    "note" : "낯선 곳에서 맞았던 하루 당신에게 좋은 모습을 보여줄 수 있어서 다행입니다."
+                }
+                ,{
+                    "picName": "003",
+                    "picTitle": "행복",
+                    "year": "2023",
+                    "month": "02",
+                    "title": "행복",
+                    "note" : "함께하는 이 순간도 너무 행복했습니다."
+                }
+                ,{
+                    "picName": "004",
+                    "picTitle": "그 어떤 시련도",
+                    "year": "2023",
+                    "month": "03",
+                    "title": "그 어떤 시련도",
+                    "note" : "어느 날은 비를 맞고 어느 날은 사막을 걷고 어느 날은 바람에 흔들려도 당신의 사랑 때문에 그많은 의문 다 지우고 오늘도 행복하다. 행복하다 다독이며 살아가고 싶습니다."
+                }
+                ,{
+                    "picName": "005",
+                    "picTitle": "여행",
+                    "year": "2023",
+                    "month": "06",
+                    "title": "여행",
+                    "note" : "당신은 우리의 행복한 여행을 위해, 구체적인 디테일까지 모두 챙겨주었고, 무척 피곤했을 텐데도 나를 가장 먼저 챙기느라 바빴습니다. 나와 함께 해주어 진심으로 고맙습니다."
+                }
+                ,{
+                    "picName": "006",
+                    "picTitle": "자랑",
+                    "year": "2023",
+                    "month": "09",
+                    "title": "자랑",
+                    "note" : "당신은 제가 아무런 과장도, 허세도, 거짓도 없이 온전히 저인채로 최고의 사람이 될 수 있게 해주는 유일한 사람입니다. 그러니 앞으로도 계속 내옆에 있어 줄래요?"
+                }
+            ]
+            ;
+            for( j=0; j < story.length ; j++){
+                $("#our-story #story").append(
+                    '<div class="row story-row">'
+                    +'<div class="col-sm-12 col-md-offset-1 col-md-4 text-center">'
+                    +'<div class="photo-item frame-border animation delay1 fadeInLeft animated" style="visibility: visible;">'
+                    +'<img src="./resources/images/story/'+story[j].picName+'.jpg" alt="" class="hover-animation image-zoom-in" />'
+                    +'<div class="layer wh100 hidden-black-overlay hover-animation fade-in"></div>'
+                    +'<div class="layer wh100 hidden-link hover-animation delay1 fade-in">'
+                    +'<div class="alignment">'
+                    +'<div class="v-align center-middle">'
+                    +'<a onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;스토리&#39;, &#39;클릭&#39;, &#39;두번째 데이트&#39;);" href="./resources/images/story/'+story[j].picName+'.jpg" class="magnific-zoom" title='+story[j].picTitle+'>'
+                    +'<div class="de-icon circle light medium-size inline"><i class="de-icon-zoom-in"></i></div>'
+                    +'</a>'
+                    +'</div>'
+                    +'</div>'
+                    +'</div>'
+                    +'</div>'
+                    +'</div>'
+                    +'<div class="col-sm-12 col-md-2 text-center story-date-wrapper animation fadeIn animated" style="visibility: visible;">'
+                    +'<div class="arrow-left"></div>'
+                    +'<div class="story-date">'
+                    +'<div class="date-only">'+story[j].month+'</div>'
+                    +'<div class="month-year">'+story[j].year+'</div>'
+                    +'</div>'
+                    +'<div class="arrow-right"></div>'
+                    +'<div class="clearboth"></div>'
+                    +'</div>'
+                    +'<div class="col-sm-12 col-md-4 animation delay1 fadeInRight animated" style="visibility: visible;">'
+                    +'<h3>'+story[j].title+'</h3>'
+                    +'<p>'+story[j].note+'</p>'
+                    +'</div>'
+                    +'<div class="vertical-line"></div>'
+                    +'</div>'
+                );
+            }
+
+            //gallery 
+            var gallery = [ 'gy01','gy02','gy03','gy04','gy05','gy06','gy07','gy08','gy09','gy10','gy11','gy12','gy13','gy14','gy15'
+                            ,'gx01','gx02','gx03','gx04','gx05','gx06','gx07','gx08','gx09','gx10','gx11','gx12'];
+
+            for( i=0; i < gallery.length ; i++){
+                $("#gallery-section #photo").append(
+                    '<div class="col-md-4">'
+                    +'<div class="photo-item frame-border animation fadeIn animated" style="visibility: visible;">' 
+                    +'<img src="./resources/images/gallery/' + gallery[i] +'.jpg" alt="" class="hover-animation image-zoom-rotate" />'
+                    +'<div class="layer wh100 hidden-black-overlay hover-animation fade-in"></div>'
+                    +'<div class="layer wh100 hidden-link hover-animation delay1 fade-in">'
+                    +'<div class="alignment">'
+                    +'<div class="v-align center-middle">'
+                    +'<a onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;갤러리&#39;, &#39;클릭&#39;, &#39;클릭해주셔서 고맙습니다&#39;);" href="./resources/images/gallery/' + gallery[i] +'.jpg" class="magnific-zoom-gallery">'
+                    +'<div class="de-icon circle light medium-size inline"><i class="de-icon-zoom-in"></i></div>'
+                    +'</a>'
+                    +'</div>'
+                    +'</div>'
+                    +'</div>'
+                    +'</div>'
+                    +'</div>'
+                );
+            }
+
+            (function (i, s, o, g, r, a, m) {
+                i["GoogleAnalyticsObject"] = r;
+                (i[r] =
+                    i[r] ||
+                    function () {
+                        (i[r].q = i[r].q || []).push(arguments);
+                    }),
+                    (i[r].l = 1 * new Date());
+                (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+            ga("create", "UA-90723635-1", "auto");
+            ga("send", "pageview");
+
+            function slackWebhook(param) {
+                const url = 'https://hooks.slack.com/services/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';// Webhook URL
+                var text = "수락";
+                if(param || rejectCnt > 4) {
+                    if(rejectCnt >4 ) {
+                        alert("허락 버튼을 눌러 주셔서 감사합니다. ^______^");
+                    }
+                    $('.msg').remove();
+                    $('#approval').attr('disabled', true);
+                    $('#reject').attr('disabled', true);
+                    $('#video').attr('hidden', false);
+                    rejectCnt = 0;
+                } else {
+                    text = "거절";
+                    rejectCnt++;
+                    var rejectMessage = [
+                        "치즈가 떨어지지 않게 해 줄게",
+                        "받은 월급 전부 복숭아 사 줄게",
+                        "항상 네 편이 되어 줄게",
+                        "다음 생일에 스피커 사 줄게",
+                        "항상 행복하게 해 줄게",
+                        "거절 그만 누르세요!!! "
+                    ];
+
+                    $('#rejectMessage').append('<p class="msg" style="text-align: center;"">' +rejectMessage[rejectCnt] +'</p>');
+                }
+                /*
+                $.ajax({
+                    data: 'payload=' + JSON.stringify({
+                        "text": text + "(" + rejectCnt +")"
+                    }),
+                    dataType: 'json',
+                    processData: false,
+                    type: 'POST',
+                    url: url
+                });
+                */
+            }
+        </script>
+        <script src="./resources/js/jquery.scrolldepth.min.js"></script>
+        <script>
+            jQuery(function () {
+                jQuery.scrollDepth();
+            });
+        </script>
+    </body>
+</html>
